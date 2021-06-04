@@ -1,0 +1,98 @@
+/* RESET STYLING */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+/* HERO SECTION */
+.hero {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+
+    background: #D8D8D8;
+    background-image: url("./images/headphones_hero_1.jpg");
+    background-size: cover;
+}
+@media only screen and (max-width: 767px) {
+    .hero {
+        /* The file size of this background image is 93% smaller
+        to improve page load speed on mobile internet connections */
+        background-image: url(images/background-photo-mobile-devices.jpg);
+    }
+}
+.logo {
+
+    position: absolute;
+    width: 325px;
+    height: 66px;
+    left: 200.61px;
+    top: 27.76px;
+    background-image: url("./images/logo_headphones.png");
+}
+.hero nav{
+    display: flex;
+}
+.hero nav ul {
+    display:flex;
+    justify-content: space-between;
+    gap: 4.8rem;
+    position: absolute;
+    height: 15px;
+    left: 946px;
+    top: 37px;
+}
+.hero nav ul li {
+    
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    color: #FFFFFF;
+
+}
